@@ -35,27 +35,30 @@
     display: block;
 }
 
+
+
 .thumbs {
     height: 300px;
     background: #000;
     position: relative;
 }
 
-.thumb {
+.thumbnail {
     height: calc((300px) / 5);
     opacity: 0.5;
 }
 
-.thumb img {
+.thumbnail img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.thumb.active {
+.thumbnail.active {
     border: 2px solid #ccc;
     opacity: 1;
 }
+
 
 .prev, .next {
     width: 20px;
@@ -64,8 +67,8 @@
     border-radius: 50%;
     background: #ccc;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    right: 50%;
+    transform: translate(50% , -50%);
     cursor: pointer;
     z-index: 999;
 }
@@ -109,8 +112,11 @@
 .bottom-right {
     color: white;
     position: absolute;
-    bottom: 30px;
-    right: 100px;
+    bottom: 20px;
+    right: 30px;
     text-align: right;
 }
 
+.hidden {
+    display: none !important;
+}
