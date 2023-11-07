@@ -46,6 +46,7 @@
 .thumbnail {
     height: calc((300px) / 5);
     opacity: 0.5;
+    
 }
 
 .thumbnail img {
@@ -67,8 +68,8 @@
     border-radius: 50%;
     background: #ccc;
     position: absolute;
-    right: 50%;
-    transform: translate(50% , -50%);
+    right: 0%;
+    transform: translate(-50%);
     cursor: pointer;
     z-index: 999;
 }
@@ -117,6 +118,3 @@
     text-align: right;
 }
 
-.hidden {
-    display: none !important;
-}
