@@ -50,6 +50,12 @@ function updateSlider() {
         <div class="prev"></div>
         <div class="next"></div>
     `;
+
+    const prevButtonHtml = '<div class="prev"></div>';
+    const nextButtonHtml = '<div class="next"></div>';
+
+    const fullContent = itemContent + prevButtonHtml + nextButtonHtml;
+    itemSlider.innerHTML = fullContent;
     // aggiorno il contenuto dello slider con l'HTML generato.
     itemSlider.innerHTML = itemContent;
     
