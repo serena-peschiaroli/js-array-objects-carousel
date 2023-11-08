@@ -47,6 +47,8 @@ function updateSlider() {
                 <p class="img-p">${activeImage.text}</p>
             </div>
         </div>
+        <div class="prev"></div>
+        <div class="next"></div>
     `;
     // aggiorno il contenuto dello slider con l'HTML generato.
     itemSlider.innerHTML = itemContent;
